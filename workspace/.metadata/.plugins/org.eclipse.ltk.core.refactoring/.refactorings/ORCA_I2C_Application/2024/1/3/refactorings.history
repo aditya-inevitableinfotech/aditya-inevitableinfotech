@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;ORCA_I2C_Application&apos;&#x0A;- Original project: &apos;ORCA_I2C_Application&apos;&#x0A;- Original element: &apos;ORCA_I2C_Application/src/test/java/GPIO1&apos;" description="Delete element" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;GPIO1" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1705494913936" subPackages="false" version="1.0"/>
+</session>

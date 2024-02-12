@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="1" verbose="0" name="LocationTest(failed)" parallel="classes">
+    <classes>
+      <class name="Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests">
+        <methods>
+          <include name="AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests"/>
+          <include name="Teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests -->
+    </classes>
+  </test> <!-- LocationTest(failed) -->
+  <test thread-count="1" verbose="0" name="Accessibility3Test(failed)" parallel="classes">
+    <classes>
+      <class name="Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests">
+        <methods>
+          <include name="Teardown"/>
+          <include name="setup"/>
+          <include name="MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test"/>
+        </methods>
+      </class> <!-- Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests -->
+    </classes>
+  </test> <!-- Accessibility3Test(failed) -->
+  <test thread-count="1" verbose="0" name="SystemTest(failed)" parallel="classes">
+    <classes>
+      <class name="System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests">
+        <methods>
+          <include name="setup"/>
+          <include name="Teardown"/>
+          <include name="LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test"/>
+        </methods>
+      </class> <!-- System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests -->
+    </classes>
+  </test> <!-- SystemTest(failed) -->
+  <test thread-count="1" verbose="0" name="GalleryTest(failed)" parallel="classes">
+    <classes>
+      <class name="Gallery.LaunchPictureFromGallery">
+        <methods>
+          <include name="GalleryTest"/>
+          <include name="setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- Gallery.LaunchPictureFromGallery -->
+    </classes>
+  </test> <!-- GalleryTest(failed) -->
+  <test thread-count="1" verbose="0" name="ContactsTest(failed)" parallel="classes">
+    <classes>
+      <class name="Contacts.AddContacts">
+        <methods>
+          <include name="Teardown"/>
+          <include name="ContactsTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Contacts.AddContacts -->
+    </classes>
+  </test> <!-- ContactsTest(failed) -->
+  <test thread-count="1" verbose="0" name="CameraTest(failed)" parallel="classes">
+    <classes>
+      <class name="Camera.CapturePictureVideo">
+        <methods>
+          <include name="setup"/>
+          <include name="CameraTest"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- Camera.CapturePictureVideo -->
+    </classes>
+  </test> <!-- CameraTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

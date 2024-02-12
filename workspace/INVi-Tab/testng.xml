@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MobileDeviceTestSuite" parallel="classes" thread-count="1" verbose="1" configfailurepolicy="skip">
+	
+	
+  <!-- WiFi Tests -->
+  <test name="WiFiTest">
+    <classes>
+      <class name="WiFi.WiFiToggleButtonOnOff"/>
+    </classes>
+  </test>
+  
+  
+    <!-- Network and Internet Tests -->
+  <test name="NetworkAndInternetTest">
+    <classes>
+      <class name="NetworkAndInternet.Airplane_mode_OnOff"/>
+    </classes>
+  </test>
+  
+  
+  <!-- Hotspot and Tethering Tests -->
+  <test name="HotspotAndTetheringTest">
+    <classes>
+      <class name="HotspotAndTethering.WiFi_USB_Bluetooth_tethering"/>
+    </classes>
+  </test>
+  
+  
+   <!-- Data Saver Tests -->
+  <test name="DataSaverTest">
+    <classes>
+      <class name="DataSaver.UseDataSaverbuttonOnOff"/>
+    </classes> 
+  </test>
+  
+  
+   <!-- Private DNS Tests -->
+  <test name="PrivateDNSTest">
+    <classes>
+      <class name="PrivateDNS.SelectDNSMode"/>
+    </classes>
+  </test>
+  
+  
+ <!-- Bluetooth Tests -->
+  <test name="BluetoothTest">
+    <classes>
+      <class name="Bluetooth.BluetoothToggleButtonOnOff"/>
+    </classes>
+  </test>
+  
+  
+    <!-- Connection Preferences Tests -->
+  <test name="ConnectionPreferencesTest">
+    <classes>
+      <class name="ConnectionPreferences.NearbyShare"/>
+    </classes>
+  </test>
+  
+  
+    <!-- Connection Preferences 2 Tests -->
+  <test name="ConnectionPreferences2Test">
+    <classes>
+      <class name="ConnectionPreferences2.AndroidAuto"/>
+    </classes>
+  </test>
+
+
+  <test name="AppsAndNotificationsTest">
+    <classes>
+      <class name="AppsAndNotifications.NotificationsTest"/>
+    </classes>
+     </test> <!-- Test -->
+     
+     
+  <test name="AppsAndNotifications2Test">
+    <classes>
+      <class name="AppsAndNotifications2.Screentime"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="AppsAndNotifications3Test">
+    <classes>
+      <class name="AppsAndNotifications3.Defaultapps"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="BatteryTest">
+    <classes>
+      <class name="Battery.BatterySaver_BatteryManager_BatteryPercentage"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="DisplayTest">
+    <classes>
+      <class name="Display.AdjustScreenBrightnesslevel_Darktheme_NightLight_Screentimeout_AutoRotateScreen_FontSize_DisplaySize_Tests"/>
+    </classes>
+     </test> <!-- Test -->
+     
+     
+  <test name="Display2Test">
+    <classes>
+      <class name="Display2.ScreenSaverTest"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="SoundTest">
+    <classes>
+      <class name="Sound.MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="Sound2Test">
+    <classes>
+      <class name="Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="StorageTest">
+    <classes>
+      <class name="Storage.PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Tests"/>
+    </classes>
+     </test> <!-- Test -->
+     
+     
+  <test name="PrivacyTest">
+    <classes>
+      <class name="Privacy.PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnostics_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="LocationTest">
+    <classes>
+      <class name="Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="SecurityTest">
+    <classes>
+      <class name="Security.SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="AccountsTest">
+    <classes>
+      <class name="Accounts.AutomaticallySyncAppData"/>
+    </classes>
+     </test> <!-- Test -->
+     
+     
+  <test name="AccessibilityTest">
+    <classes>
+      <class name="Accessibility.SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme_Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimations_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="Accessibility2Test">
+    <classes>
+      <class name="Accessibility2.AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="Accessibility3Test">
+    <classes>
+      <class name="Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="DigitalWellbeingAndParantelControlsTest">
+    <classes>
+      <class name="DigitalWellbeingAndParantelControls.Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="GoogleTest">
+    <classes>
+      <class name="Google.Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="DuraSpeedTest">
+    <classes>
+      <class name="DuraSpeed.DuraSpeedAndApps_ToggleButtonOnOff_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="SystemTest">
+    <classes>
+      <class name="System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="System2Test">
+    <classes>
+      <class name="System2.DeveloperOptionsTest"/>
+    </classes>
+    </test> <!-- Test -->
+    
+    
+  <test name="AboutTabletTest">
+    <classes>
+      <class name="AboutTablet.DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Tests"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="ClockTest">
+    <classes>
+      <class name="Clock.SetAlarm"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="SoundRecorderTest">
+    <classes>
+      <class name="SoundRecorder.SoundRecordAndPlay"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="DialerTest">
+    <classes>
+      <class name="Dialer.DialANumber"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="GalleryTest">
+    <classes>
+      <class name="Gallery.LaunchPictureFromGallery"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="ContactsTest">
+    <classes>
+      <class name="Contacts.AddContacts"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="CameraTest">
+    <classes>
+      <class name="Camera.CapturePictureVideo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="CalculatorTest">
+    <classes>
+      <class name="Calculator.CalculateNumbers"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  </suite> <!-- Suite -->

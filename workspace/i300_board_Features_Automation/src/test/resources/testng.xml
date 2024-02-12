@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="i300 Test Suite" verbose="5" parallel="classes" thread-count="10">
+  
+      <listeners>
+        <listener class-name="System2.DeveloperOptionsTest" />
+        <listener class-name="System2.TestNameListener" />
+    </listeners>
+    <test name="Developer Options Test Cases">
+        <packages>
+            <package name="System2" />
+        </packages>
+    </test> 
+    
+    
+    
+     <listeners>
+        <listener class-name="Accessibility2.DwellTiming_TouchAndHoldDelay_Vibration_MonoAudio_Captions_HighContrastText_Tests" />
+        <listener class-name="Accessibility2.TestNameListener" />
+    </listeners>
+    <test name="Dwell timing, Touch and hold delay, Vibration, Mono audio, Captions and High contrast text Features Test Cases">
+        <packages>
+            <package name="Accessibility2" />
+        </packages>
+    </test>
+    
+    
+    <listeners>
+        <listener class-name="NetworkAndInternet.WiFi_WiFiPreferences_SavedNetworks_SecureMode_Ethernet_DataUsage_USBTethering_AirplaneMode_VPN_PrivateDNS" />
+        <listener class-name="NetworkAndInternet.TestNameListener" />
+    </listeners>
+    <test name="WiFi,WiFi preferences, Saved networks, Secure Mode, Ethernet, Data-Usage, USB-Tethering, Airplane mode, VPN and Private-DNS Feature Test Cases">
+        <packages>
+            <package name="NetworkAndInternet" />
+        </packages>
+    </test>
+    
+    
+      <listeners>
+        <listener class-name="Accounts.AutomaticallySyncDataTest" />
+        <listener class-name="Accounts.TestNameListener" />
+    </listeners>
+    <test name="Automatically sync data Feature Test Cases">
+        <packages>
+            <package name="Accounts" />
+        </packages>
+    </test>
+    
+    
+     <listeners>
+        <listener class-name="System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests" />
+        <listener class-name="System.TestNameListener" />
+    </listeners>
+    <test name="LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests Cases">
+        <packages>
+            <package name="System" />
+        </packages>
+    </test> 
+    
+    
+    
+      <listeners>
+        <listener class-name="ConnectedDevices.USB_PairNewDevice_ConnectionPreferences_Bluetooth_Cast_Printing_RecivedFiles_Tests" />
+        <listener class-name="ConnectedDevices.TestNameListener" />
+    </listeners>
+    <test name="USB, Pair new device, Connection-Preferences, Bluetooth, Cast printing and Recived files Feature Test Cases">
+        <packages>
+            <package name="ConnectedDevices" />
+        </packages>
+    </test>
+  
+    
+     <listeners>
+        <listener class-name="AppsAndNotifications.Notifications_DefaultApps_Test" />
+        <listener class-name="AppsAndNotifications.TestNameListener" />
+    </listeners>
+    <test name="Notifications and Default apps Feature Test Cases">
+        <packages>
+            <package name="AppsAndNotifications" />
+        </packages>
+    </test>
+   
+   
+      <listeners>
+        <listener class-name="Battery.AppsAreRunningNormally_StandbyIntelligentPowerSaving_BatterySaver_BatteryManager_BatteryPercentage_Tests" />
+        <listener class-name="Battery.TestNameListener" />
+    </listeners>
+    <test name="Apps are running normally, Stand by intelligent power saving, Battery saver, Battery manager, Battery percentage Feature Test Cases">
+        <packages>
+            <package name="Battery" />
+        </packages>
+    </test>
+    
+    
+    <listeners>
+        <listener class-name="Display.BrightnessLevel_NightLight_Sleep_FontSize_DisplaySize_ScreenSaver_DeviceTheme_HDMISettings_Tests" />
+        <listener class-name="Display.TestNameListener" />
+    </listeners>
+    <test name="Brightness level, Night light, Sleep, Font size, Display size, Screen saver, Device theme, HDMI settings, Features Test Cases">
+        <packages>
+            <package name="Display" />
+        </packages>
+    </test>
+    
+    
+      <listeners>
+        <listener class-name="Sound.MediaVolume_CallVolume_RingAndNotificationVolume_AlarmVolume_Tests" />
+        <listener class-name="Sound.TestNameListener" />
+    </listeners>
+    <test name="Media volume, Call volume, Ring and notification volume, Alarm volume Features Test Cases">
+        <packages>
+            <package name="Sound" />
+        </packages>
+    </test>
+    
+    
+    <listeners>
+        <listener class-name="Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests" />
+        <listener class-name="Sound2.TestNameListener" />
+    </listeners>
+    <test name="Do not disturb, Media, Shortcut to prevent ringing, Phonem ringtone, Default notification sound, Default alarm sound, Features Test Cases">
+        <packages>
+            <package name="Sound2" />
+        </packages>
+    </test>
+    
+    
+     <listeners>
+        <listener class-name="Storage.PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Tests" />
+        <listener class-name="Storage.TestNameListener" />
+    </listeners>
+    <test name="PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Tests Cases">
+        <packages>
+            <package name="Storage" />
+        </packages>
+    </test>
+    
+    
+      <listeners>
+        <listener class-name="SecurityAndLocation.ScreenLock_LockScreenPreferences_Location_ShowPasswords_DeviceAdminApps_EncryptionAndCredentials_ScreenPinning_DeviceErasePassword_Tests" />
+        <listener class-name="SecurityAndLocation.TestNameListener" />
+    </listeners>
+    <test name="Screen lock, Lock screen preferences, Location, Show passwords, Device admin apps, Encryption and credentials, Screen pinning, Device erase password Features Test Cases">
+        <packages>
+            <package name="SecurityAndLocation" />
+        </packages>
+    </test>
+    
+    
+      <listeners>
+        <listener class-name="MicroG.Added_MicroG_Into_Build" />
+        <listener class-name="MicroG.TestNameListener" />
+    </listeners>
+    <test name="Added MicroG into build patch feature test cases">
+        <packages>
+            <package name="MicroG" />
+        </packages>
+    </test>
+    
+    
+     <listeners>
+        <listener class-name="Accessibility.VolumeKeyShortcut_BraveDNS_TextToSpeechOutput_FontSize_DisplaySize_Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimations_Tests" />
+        <listener class-name="Accessibility.TestNameListener" />
+    </listeners>
+    <test name="Volume key shortcut, Brave DNS, Text to speech output, Font size, Display size, Magnification, Color correction, Color inversion, Large mouse pointer and Remove animations Feature Test Cases">
+        <packages>
+            <package name="Accessibility" />
+        </packages>
+    </test>
+    
+  
+     <listeners>
+        <listener class-name="DuraSpeed.DuraSpeedAndApps_ToggleButtonOnOff_Tests" />
+        <listener class-name="DuraSpeed.TestNameListener" />
+    </listeners>
+    <test name="DuraSpeedAndApps_ToggleButtonOnOff_Test Cases">
+        <packages>
+            <package name="DuraSpeed" />
+        </packages>
+    </test> 
+    
+    
+     <listeners>
+        <listener class-name="AboutPhone.DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_EthernetMACAddress_BluetoothAddress_WiFiMACAddress_CustomBuildVersion_BuildNumber_Tests" />
+        <listener class-name="AboutPhone.TestNameListener" />
+    </listeners>
+    <test name="Device name, Emergency information, Legal information, Model and hardware, Android version, Ethernet, MAC address, Bluetooth address, WiFi MAC address, Custom build version and Build number Features Test Cases">
+        <packages>
+            <package name="AboutPhone" />
+        </packages>
+    </test> 
+    
+    
+    
+     <listeners>
+        <listener class-name="Clock.SetAlarmTest" />
+        <listener class-name="Clock.TestNameListener" />
+    </listeners>
+    <test name="Set Alarm Test Cases">
+        <packages>
+            <package name="Clock" />
+        </packages>
+    </test> 
+    
+    
+     <listeners>
+        <listener class-name="SoundRecorder.SoundRecordAndPlayTest" />
+        <listener class-name="SoundRecorder.TestNameListener" />
+    </listeners>
+    <test name="Sound record and play Test Cases">
+        <packages>
+            <package name="SoundRecorder" />
+        </packages>
+    </test> 
+    
+     
+   
+    <listeners>
+        <listener class-name="AppsAndNotifications2.AppPermissions_SpecialAppAccess_Tests" />
+        <listener class-name="AppsAndNotifications2.TestNameListener" />
+    </listeners>
+    <test name="App permissions and Special App Access Feature Test Cases">
+        <packages>
+            <package name="AppsAndNotifications2" />
+        </packages>
+    </test>
+    
+    
+     <listeners>
+        <listener class-name="Contacts.AddContactsTest" />
+        <listener class-name="Contacts.TestNameListener" />
+    </listeners>
+    <test name="Add contacts Test Cases">
+        <packages>
+            <package name="Contacts" />
+        </packages>
+    </test> 
+    
+    
+     <listeners>
+        <listener class-name="Calculator.CalculateNumbersTest" />
+        <listener class-name="Calculator.TestNameListener" />
+    </listeners>
+    <test name="Calculate numbers Test Cases">
+        <packages>
+            <package name="Calculator" />
+        </packages>
+    </test> 
+
+
+  <listeners>
+        <listener class-name="Vanadium.AddedVanadiumIntoBuild_AlphaNumericPassWithUppercaseLowercaseSymbol_WipeUserDataOnTooManyAttempts_AddPermissionForFormatDeviceAtLockScreen" />
+        <listener class-name="Vanadium.TestNameListener" />
+    </listeners>
+    <test name="Added vanadium into build, Alpha-numeric pass with uppercase, lowercase and symbol, Wipe user data on toom many attempts, Add permission for format device at lock screen Test Cases">
+        <packages>
+            <package name="Vanadium" />
+        </packages>
+    </test> 
+    
+   </suite> 
+   

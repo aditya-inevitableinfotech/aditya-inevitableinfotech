@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="Thread"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="Thread"/>
+			<item value="AD."/>
+			<item value="AD"/>
+			<item value="toggleMenuItem"/>
+			<item value="2023"/>
+			<item value="index"/>
+			<item value="yes"/>
+			<item value="pinText"/>
+			<item value="Connected device Name: "/>
+			<item value="UDID"/>
+			<item value="Connected device UDID:"/>
+			<item value="adb devices"/>
+			<item value="By.xpath(&quot;//android.widget.TextView[@text=&apos;&quot; + selectedPinNumber"/>
+			<item value="click"/>
+			<item value="lockDevice()"/>
+		</list>
+		<list key="replacehistory">
+			<item value="driver."/>
+			<item value="driver"/>
+			<item value="AD"/>
+			<item value="driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);"/>
+			<item value="Thread.sleep(2000);"/>
+			<item value="cap"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1371"/>
+		<item key="DIALOG_Y_ORIGIN" value="88"/>
+		<item key="DIALOG_WIDTH" value="357"/>
+		<item key="DIALOG_HEIGHT" value="408"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="651"/>
+		<item key="DIALOG_Y_ORIGIN" value="380"/>
+	</section>
+</section>

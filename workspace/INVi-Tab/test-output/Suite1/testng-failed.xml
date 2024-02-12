@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="classes">
+  <test thread-count="1" name="Test1(failed)" parallel="classes">
+    <classes>
+      <class name="tests.BaseClass">
+        <methods>
+          <include name="simpleTest"/>
+          <include name="setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- tests.BaseClass -->
+      <class name="tests.MyApplicationsTesting">
+        <methods>
+          <include name="SoundRecorderTest"/>
+          <include name="ClockTest"/>
+          <include name="WiFiTest"/>
+          <include name="DisplayTest"/>
+          <include name="CameraTest"/>
+          <include name="GalleryTest"/>
+          <include name="CalculatorTest"/>
+          <include name="DiallerTest"/>
+          <include name="setup"/>
+          <include name="BluetoothTest"/>
+          <include name="MessagingTest"/>
+          <include name="Teardown"/>
+          <include name="ContactsTest"/>
+        </methods>
+      </class> <!-- tests.MyApplicationsTesting -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

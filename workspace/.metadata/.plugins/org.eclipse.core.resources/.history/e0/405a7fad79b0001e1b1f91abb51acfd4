@@ -1,0 +1,458 @@
+package Selauto;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+import java.util.Random;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidTouchAction;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.LongPressOptions;
+import io.appium.java_client.touch.offset.ElementOption;
+
+public class ActivityCls1 {
+
+	AndroidDriver<MobileElement> AD;
+	Activity sett;
+
+	@BeforeTest
+	public void setup() throws MalformedURLException {
+				
+		try {
+            DesiredCapabilities dc = new DesiredCapabilities();
+
+            dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "APPIUM");
+            dc.setCapability("appium-version", "1.22.3");
+            dc.setCapability(MobileCapabilityType.DEVICE_NAME, "sb52");
+            dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+            dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
+            
+            DeviceInfo deviceInfo = getConnectedDeviceInfo();
+            if (deviceInfo != null) {
+                System.out.println("Connected device UDID: " + deviceInfo.getDeviceUDID());
+                System.out.println("Connected device Name: " + deviceInfo.getDeviceName());
+            } else {
+            	System.out.println("No devices connected. Please Check your Connectivity!");
+                System.exit(0);
+            }        
+        
+            dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+            dc.setCapability(MobileCapabilityType.NO_RESET, "true");
+            dc.setCapability(MobileCapabilityType.FULL_RESET, "false");
+            dc.setCapability("uiautomator2ServerInstallTimeout", 9000);
+            dc.setCapability("uiautomator2ServerLaunchTimeout", 9000);
+            dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 2000);
+            dc.setCapability("automationName", "uiautomator2");
+            dc.setCapability("skipServerInstallation", false);
+            dc.setCapability("adbExecTimeout", 5000);
+            dc.setCapability("clearSystemFiles", true);
+            dc.setCapability("appWaitForLaunch", false);
+            dc.setCapability("suppressKillServer", true);
+            dc.setCapability("autoGrantPermissions", "true");
+            dc.setCapability("appWaitPackage", "io.appium.settings");
+            dc.setCapability("appWaitActivity", "io.appium.settings.Settings");
+            dc.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
+            dc.setCapability(MobileCapabilityType.CLEAR_SYSTEM_FILES, true);
+
+            URL url = new URL("http://127.0.0.1:4723/wd/hub");
+            AD = new AndroidDriver<MobileElement>(url, dc);
+            AD.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
+
+        } catch (Exception exp) {
+            System.out.println("Cause is : " + exp.getCause());
+            System.out.println("Message is : " + exp.getMessage());
+            exp.printStackTrace();
+        }
+    }
+
+    public static DeviceInfo getConnectedDeviceInfo() {
+        try {
+            Process process = Runtime.getRuntime().exec("adb devices");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.endsWith("device")) {
+                    String[] deviceInfo = line.split("\\s+");
+                    String deviceName = deviceInfo[0];
+
+                    // Execute adb shell getprop ro.product.model command
+                    Process Process1 = Runtime.getRuntime().exec("adb -s " + deviceName + " shell getprop ro.product.model");
+                    BufferedReader Reader1 = new BufferedReader(new InputStreamReader(Process1.getInputStream()));
+                    String modelName = Reader1.readLine();
+                    Reader1.close();
+
+                    reader.close();
+                    return new DeviceInfo(deviceName, modelName);
+                }
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+	static class DeviceInfo {
+	    private final String deviceUDID;
+	    private final String deviceName;
+	
+	    public DeviceInfo(String deviceName, String deviceUDID) {
+	        this.deviceUDID = deviceUDID;
+	        this.deviceName = deviceName;
+	    }
+	
+	    public String getDeviceUDID() {
+	        return deviceName;
+	    }
+	
+	    public String getDeviceName() {
+	        return deviceUDID;
+	    }
+	}
+
+		@SuppressWarnings({ "rawtypes" })
+		@Test(invocationCount = 1)
+		public class TestClass {
+		    @SuppressWarnings({ })
+		    private boolean[] featureExecuted = new boolean[8];
+			@SuppressWarnings({ "unused", "resource" })
+			public void main() throws InterruptedException {
+		        Scanner scanner = new Scanner(System.in);
+
+		        while (true) {
+		            System.out.println("-----ANDROID MENU-----");
+		            System.out.println("1. Launch Settings");
+		            System.out.println("2. Launch Messaging");
+		            System.out.println("3. Launch Camera");
+		            System.out.println("4. Launch Dialer");
+		            System.out.println("5. Open Gallery");
+		            System.out.println("6. GPIO APP");
+		            System.out.println("7. Exit");
+		            
+		            System.out.print("ENTER YOUR CHOICE: ");
+
+		            //int choice = scanner.nextInt();
+		            int choice;
+		            Random random = new Random();
+		            choice=random.nextInt(7)+1;
+		            System.out.println(" Random Integer:"+ choice);
+		            
+		            if (featureExecuted[choice]) {
+		                System.out.println("Feature " + choice + " has already been tested. Choosing another option.");
+		                continue;
+		            }
+
+
+		            switch (choice) {
+		                
+		            case 1:
+				    	
+					    System.out.println("I will open Settings ....");
+					    featureExecuted[1] = true;
+					    sett =new Activity("com.android.settings","com.android.settings.Settings");
+					    AD.startActivity(sett);	   
+					   	System.out.println("Internet_WiFi_NetworkPreferences_AirplaneMode_HotspotAndTethering_WiFiHotspot_USBTetherin_BluetoothTethering_DataSaver_VPN_PrivateDNS_Tests Started...");
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+						AD.findElementByXPath("//android.widget.TextView[@text='Network & internet']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Internet']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementById("android:id/switch_widget").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);	
+						AD.findElementById("android:id/switch_widget").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))" +".scrollIntoView(new UiSelector()" +".textMatches(\"" + "Network preferences" + "\").instance(0))"));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Network preferences']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Notify for public networks']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Notify for public networks']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Install certificates']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElement(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Airplane mode']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Airplane mode']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))" +".scrollIntoView(new UiSelector()" +".textMatches(\"" + "Hotspot & tethering" + "\").instance(0))"));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Hotspot & tethering']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='Wi‑Fi hotspot']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Use Wi‑Fi hotspot']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Use Wi‑Fi hotspot']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Hotspot name']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElement(By.xpath("//android.widget.Button[@text='OK']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Security']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.CheckedTextView[@text='WPA3-Personal']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Security']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.CheckedTextView[@text='WPA2-Personal']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Security']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.CheckedTextView[@text='None']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Security']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.CheckedTextView[@text='WPA2/WPA3-Personal']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))" +".scrollIntoView(new UiSelector()" +".textMatches(\"" + "Hotspot password" + "\").instance(0))"));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElementByXPath("//android.widget.TextView[@text='Hotspot password']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						AD.findElement(By.xpath("//android.widget.Button[@text='OK']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver<MobileElement>)AD).closeApp();
+						
+						System.out.println("--------> Internet_WiFi_NetworkPreferences_AirplaneMode_HotspotAndTethering_WiFiHotspot_USBTetherin_BluetoothTethering_DataSaver_VPN_PrivateDNS_Tests Executed Successfully on ORCA board <--------");
+					  
+						break;
+
+
+		            case 2:
+				  		
+					    System.out.println("I will open Messaging ....");
+					    featureExecuted[2] = true;
+					    sett =new Activity("com.android.mms","com.android.mms.ui.ConversationList");
+					    AD.startActivity(sett);
+					    System.out.println("Message Testing is Started...");
+						AD.findElement(By.id("com.android.mms:id/create")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElementByXPath("//android.widget.MultiAutoCompleteTextView[@text='To']").sendKeys("9886740211");
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElementByXPath("//android.widget.EditText[@text='Send message']").sendKeys("Hi");
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("com.android.mms:id/send_button_sms")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver<MobileElement>)AD).closeApp();
+						
+						System.out.println("--------> Message Test Executed Successfully on ORCA Board <--------");
+					    break;
+
+		            case 3:
+				  		
+					    System.out.println("I will open Camera ....");
+					    featureExecuted[3] = true;
+					    sett =new Activity("org.codeaurora.snapcam","com.android.camera.CameraLauncher");
+						AD.startActivity(sett);
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						System.out.println("Camera Testing is Started...");
+						AD.findElement(By.xpath("//android.widget.TextView[@text='Video']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("org.codeaurora.snapcam:id/video_button")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("org.codeaurora.snapcam:id/video_button")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("org.codeaurora.snapcam:id/front_back_switcher")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='Photo']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("org.codeaurora.snapcam:id/shutter_button")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver<MobileElement>)AD).closeApp();
+						
+						System.out.println("--------> Camera Test Executed Successfully on ORCA Board <--------");
+						
+					    break;
+
+		            case 4:
+						  
+						System.out.println("I will open Dialer ....");
+						featureExecuted[4] = true;
+						sett =new Activity("org.codeaurora.dialer","com.android.dialer.main.impl.MainActivity");
+						AD.startActivity(sett);
+						System.out.println("Dialer Testing is Started...");
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("com.android.dialer:id/fab")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='9']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='6']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='4']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='8']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='3']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='4']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='9']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='5']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='6']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.TextView[@text='7']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("com.android.dialer:id/dialpad_floating_action_button")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.Button[@text='OK']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver<MobileElement>)AD).closeApp();
+						
+						System.out.println("--------> Phone Test Executed Successfully on ORCA Board <--------");
+						
+						break;
+
+
+		            case 5:
+				  		
+						System.out.println("I will open Gallery ....");
+						featureExecuted[5] = true;
+						sett=new Activity("com.android.gallery3d","com.android.gallery3d.app.GalleryActivity");
+						AD.startActivity(sett);
+						System.out.println("Gallery Testing is Started...");		
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("com.android.gallery3d:id/gl_root_view")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.id("com.android.gallery3d:id/gl_root_view")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						MobileElement holdElement= AD.findElementById("com.android.gallery3d:id/gl_root_view");
+						AndroidTouchAction t = new AndroidTouchAction(AD);   
+						t.longPress(LongPressOptions.longPressOptions()
+						.withElement(ElementOption.element(holdElement))
+						.withDuration(Duration.ofMillis(10000))).release().perform();		  
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.ImageButton[@content-desc='More options']")).click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+						AD.findElementByXPath("//android.widget.TextView[@text='Details']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+						AD.findElementByXPath("//android.widget.Button[@text='Close']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+						MobileElement holdElement1= AD.findElementById("com.android.gallery3d:id/gl_root_view");
+						AndroidTouchAction t1 = new AndroidTouchAction(AD);   
+						t1.longPress(LongPressOptions.longPressOptions()
+						.withElement(ElementOption.element(holdElement1))
+						.withDuration(Duration.ofMillis(5000))).release().perform();
+						AD.findElementByXPath("//android.widget.TextView[@content-desc='Delete']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+						AD.findElementByXPath("//android.widget.Button[@text='OK']").click();
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						((AndroidDriver<MobileElement>)AD).closeApp();
+							
+						System.out.println("--------> Gallery Test Executed Successfully on ORCA board <--------");
+						
+						break;
+						
+		            case 6:
+				  		
+						System.out.println("I will open GPIO App ....");
+						featureExecuted[6] = true;
+						sett =new Activity("com.inevitable.controller","com.inevitable.controller.MainActivity");
+						AD.startActivity(sett);
+						System.out.println("GPIO APP Launched...");
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.Button[@text='GPIO']")).click();
+						System.out.println("GPIO SECTION...");
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.Button[@text='I2C']")).click();
+						System.out.println("I2C SECTION...");
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+						((AndroidDriver) AD).pressKey(new KeyEvent(AndroidKey.BACK));
+						System.out.println("E X I T GPIO APP..");
+						AD.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+						AD.findElement(By.xpath("//android.widget.Button[@text='YES']")).click();
+						((AndroidDriver<MobileElement>)AD).closeApp();
+						
+						System.out.println("--------> GPIO TEST MOCK-UP COMPLETED <--------");
+
+						break;
+
+
+		             case 7:
+		                	
+		                    System.out.println("Exiting...");
+		                    System.exit(0);
+		                    
+		                    break;
+
+		                default:
+		                	
+		                    System.out.println("Invalid choice. Please enter a number between 1 and 6.");
+		                    
+		                    break;
+		            }
+
+		            // Print the menu after execution of each option
+		            System.out.println();
+		        }
+		    }
+		}
+		
+		@AfterTest
+		private void Teardown() {
+			if (AD != null) 
+			{
+	            AD.quit();
+			}
+		}
+		
+	}
+

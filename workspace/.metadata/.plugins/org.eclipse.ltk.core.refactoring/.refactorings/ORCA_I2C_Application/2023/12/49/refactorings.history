@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ORCA.ORCA_I2CAppTest&apos; to &apos;koshexAppTest&apos;&#x0A;- Original project: &apos;ORCA_I2C_Application&apos;&#x0A;- Original element: &apos;ORCA.ORCA_I2CAppTest&apos;&#x0A;- Renamed element: &apos;ORCA.koshexAppTest&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ORCA_I2CAppTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;ORCA{ORCA_I2CAppTest.java[ORCA_I2CAppTest" matchStrategy="1" name="koshexAppTest" qualified="false" references="true" similarDeclarations="false" stamp="1701949310643" textual="false" version="1.0"/>
+</session>

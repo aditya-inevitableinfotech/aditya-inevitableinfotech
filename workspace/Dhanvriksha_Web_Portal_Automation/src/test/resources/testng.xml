@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Dhanvriksha_Web_Automation Test Suite" verbose="5" parallel="classes" thread-count="10">
+    
+<listeners>
+        
+             <listener class-name="Dhanvriksha_Login.DhanvrikshaLoginAutomation"/>
+             <listener class-name="Dhanvriksha_Login.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha Login Automation">
+<classes>
+<class name="Dhanvriksha_Login.DhanvrikshaLoginAutomation" />
+<class name="Dhanvriksha_Login.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+ <listeners>
+        
+             <listener class-name="Dhanvriksha_Dashboard_KYC_Approval_Request_Automation.Dashboard_Testing_1stTestCase_KYC_Approval_Request_Automation"/>
+             <listener class-name="Dhanvriksha_Dashboard_KYC_Approval_Request_Automation.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 1st Module Dashboard Testing 1st Test Case KYC Approval Request Automation">
+<classes>
+<class name="Dhanvriksha_Dashboard_KYC_Approval_Request_Automation.Dashboard_Testing_1stTestCase_KYC_Approval_Request_Automation" />
+<class name="Dhanvriksha_Dashboard_KYC_Approval_Request_Automation.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+ <listeners>
+        
+             <listener class-name="Dhanvriksha_Dashboard_Application_Approval_Request_Automation.Dashboard_Testing_2ndTestCase_Application_Approval_RequestTest"/>
+             <listener class-name="Dhanvriksha_Dashboard_Application_Approval_Request_Automation.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 1st Module Dashboard Testing 2nd Test Case Application Approval Request Automation">
+<classes>
+<class name="Dhanvriksha_Dashboard_Application_Approval_Request_Automation.Dashboard_Testing_2ndTestCase_Application_Approval_RequestTest" />
+<class name="Dhanvriksha_Dashboard_Application_Approval_Request_Automation.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_Dashboard_Loan_Disbursement_Bucket_Automation.Dashboard_Testing_3rdTestCase_Loan_Disbursement_Bucket_Test"/>
+             <listener class-name="Dhanvriksha_Dashboard_Loan_Disbursement_Bucket_Automation.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 1st Module Dashboard Testing 3rd Test Case Loan Disbursement Bucket Automation">
+<classes>
+<class name="Dhanvriksha_Dashboard_Loan_Disbursement_Bucket_Automation.Dashboard_Testing_3rdTestCase_Loan_Disbursement_Bucket_Test" />
+<class name="Dhanvriksha_Dashboard_Loan_Disbursement_Bucket_Automation.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_Branch.DhanvrikshaBranchAutomation"/>
+             <listener class-name="Dhanvriksha_Branch.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 2nd Module Branch Automation">
+<classes>
+<class name="Dhanvriksha_Branch.DhanvrikshaBranchAutomation" />
+<class name="Dhanvriksha_Branch.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_Area.DhanvrikshaAreaAutomation"/>
+             <listener class-name="Dhanvriksha_Area.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 3rd Module Area Automation">
+<classes>
+<class name="Dhanvriksha_Area.DhanvrikshaAreaAutomation" />
+<class name="Dhanvriksha_Area.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_Employees.DhanvrikshaEmployeesAutomation"/>
+             <listener class-name="Dhanvriksha_Employees.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 4th Module Employees Automation">
+<classes>
+<class name="Dhanvriksha_Employees.DhanvrikshaEmployeesAutomation" />
+<class name="Dhanvriksha_Employees.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_Loans.DhanvrikshaEmployeesAutomation"/>
+             <listener class-name="Dhanvriksha_Loans.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 5th Module Loans Automation">
+<classes>
+<class name="Dhanvriksha_Loans.DhanvrikshaLoansAutomation" />
+<class name="Dhanvriksha_Loans.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_FixedDeposit.DhanvrikshaFixedDepositAutomation"/>
+             <listener class-name="Dhanvriksha_FixedDeposit.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 6th Module Fixed Deposit Automation">
+<classes>
+<class name="Dhanvriksha_FixedDeposit.DhanvrikshaFixedDepositAutomation" />
+<class name="Dhanvriksha_FixedDeposit.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_RecurringDeposit.DhanvrikshaRecurringDepositAutomation"/>
+             <listener class-name="Dhanvriksha_RecurringDeposit.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 7th Module Recurring Deposit Automation">
+<classes>
+<class name="Dhanvriksha_RecurringDeposit.DhanvrikshaRecurringDepositAutomation" />
+<class name="Dhanvriksha_RecurringDeposit.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_Members.DhanvrikshaMemberAutomation"/>
+             <listener class-name="Dhanvriksha_Members.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 8th Module Members Automation">
+<classes>
+<class name="Dhanvriksha_Members.DhanvrikshaMemberAutomation" />
+<class name="Dhanvriksha_Members.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_CollectionEntry.DhanvrikshaCollectionEntryAutomation"/>
+             <listener class-name="Dhanvriksha_CollectionEntry.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 9th Module Collection Entry Automation">
+<classes>
+<class name="Dhanvriksha_CollectionEntry.DhanvrikshaCollectionEntryAutomation" />
+<class name="Dhanvriksha_CollectionEntry.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_CollectionSheet.DhanvrikshaCollectionSheetAutomation"/>
+             <listener class-name="Dhanvriksha_CollectionSheet.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 10th Module Collection Sheet Automation">
+<classes>
+<class name="Dhanvriksha_CollectionSheet.DhanvrikshaCollectionSheetAutomation" />
+<class name="Dhanvriksha_CollectionSheet.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_Reports.DhanvrikshaReportsAutomation"/>
+             <listener class-name="Dhanvriksha_Reports.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha 11th Module Reports Automation">
+<classes>
+<class name="Dhanvriksha_Reports.DhanvrikshaReportsAutomation" />
+<class name="Dhanvriksha_Reports.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+<listeners>
+        
+             <listener class-name="Dhanvriksha_LogOut.DhanvrikshaLogoutAutomation"/>
+             <listener class-name="Dhanvriksha_LogOut.TestNameListener"/>
+             
+     </listeners> 
+     
+      <test name="Dhanvriksha Logout Automation">
+<classes>
+<class name="Dhanvriksha_LogOut.DhanvrikshaLogoutAutomation" />
+<class name="Dhanvriksha_LogOut.TestNameListener" />
+</classes>
+</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+

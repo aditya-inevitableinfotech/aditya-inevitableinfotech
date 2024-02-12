@@ -1,0 +1,207 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 37, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 3,784.095 sec <<< FAILURE! - in TestSuite
+AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests(Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests)  Time elapsed: 8.051 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'invlko047-Latitude-7490', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-35-generic', java.version: '1.8.0_362'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: d26955af-fd09-4a59-bfac-c2a318fef39d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests(AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests.java:74)
+
+MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test(Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests)  Time elapsed: 72.499 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'invlko047-Latitude-7490', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-35-generic', java.version: '1.8.0_362'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: 357cd128-dd17-49ad-8d53-79c4648c9c9c
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Shortcut from lock screen']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test(MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests.java:152)
+
+LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test(System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests)  Time elapsed: 256.553 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'invlko047-Latitude-7490', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-35-generic', java.version: '1.8.0_362'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: f1391889-f2cf-4e55-baa2-cd2b92f2782f
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='Save recent screenshots in clipboard']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test(LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests.java:254)
+
+GalleryTest(Gallery.LaunchPictureFromGallery)  Time elapsed: 12.231 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'invlko047-Latitude-7490', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-35-generic', java.version: '1.8.0_362'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.pho..., appPackage: com.google.android.apps.pho..., appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.google.android.apps.pho..., appPackage: com.google.android.apps.pho..., appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: 729dc5b5-5a94-448f-b59a-1743a45a769f
+*** Element info: {Using=id, value=com.google.android.apps.photosgo:id/single_photo}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Gallery.LaunchPictureFromGallery.GalleryTest(LaunchPictureFromGallery.java:70)
+
+ContactsTest(Contacts.AddContacts)  Time elapsed: 12.179 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'invlko047-Latitude-7490', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-35-generic', java.version: '1.8.0_362'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.dialer.e..., appPackage: com.google.android.dialer, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.google.android.dialer.e..., appPackage: com.google.android.dialer, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: f499e8d3-386f-4c85-bd38-20cff2e0ea9b
+*** Element info: {Using=id, value=com.google.android.dialer:id/tab_contacts}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Contacts.AddContacts.ContactsTest(AddContacts.java:66)
+
+CameraTest(Camera.CapturePictureVideo)  Time elapsed: 12.214 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'invlko047-Latitude-7490', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-35-generic', java.version: '1.8.0_362'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mediatek.camera.CameraL..., appPackage: com.mediatek.camera, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.mediatek.camera.CameraL..., appPackage: com.mediatek.camera, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: 82a9c9b4-2719-4a81-a4b6-efcc63f40786
+*** Element info: {Using=id, value=com.mediatek.camera:id/shutter_button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Camera.CapturePictureVideo.CameraTest(CapturePictureVideo.java:65)
+

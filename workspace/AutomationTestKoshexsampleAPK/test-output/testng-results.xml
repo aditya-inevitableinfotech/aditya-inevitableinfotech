@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-16T18:33:16 IST" name="Default suite" finished-at="2024-01-16T18:34:30 IST" duration-ms="74310">
+    <groups>
+    </groups>
+    <test started-at="2024-01-16T18:33:16 IST" name="Default test" finished-at="2024-01-16T18:34:30 IST" duration-ms="74310">
+      <class name="I2C.I2CAutomation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:I2C.I2CAutomation@3e84448c]" started-at="2024-01-16T18:33:16 IST" name="setup" finished-at="2024-01-16T18:33:24 IST" duration-ms="8040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ControllerI2CTesting()[pri:0, instance:I2C.I2CAutomation@3e84448c]" started-at="2024-01-16T18:33:24 IST" name="ControllerI2CTesting" finished-at="2024-01-16T18:34:30 IST" duration-ms="65893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ControllerI2CTesting -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:I2C.I2CAutomation@3e84448c]" started-at="2024-01-16T18:34:30 IST" name="teardown" finished-at="2024-01-16T18:34:30 IST" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- I2C.I2CAutomation -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

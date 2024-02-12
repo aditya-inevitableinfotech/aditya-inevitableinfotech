@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="classes" name="NetworkAndInternetTest(failed)">
+    <classes>
+      <class name="NetworkAndInternet.Airplane_mode_OnOff">
+        <methods>
+          <include name="AirplaneModeTest"/>
+          <include name="setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- NetworkAndInternet.Airplane_mode_OnOff -->
+    </classes>
+  </test> <!-- NetworkAndInternetTest(failed) -->
+  <test thread-count="1" parallel="classes" name="DisplayTest(failed)">
+    <classes>
+      <class name="Display.AdjustScreenBrightnesslevel_Darktheme_NightLight_Screentimeout_AutoRotateScreen_FontSize_DisplaySize_Tests">
+        <methods>
+          <include name="Teardown"/>
+          <include name="DisplayTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Display.AdjustScreenBrightnesslevel_Darktheme_NightLight_Screentimeout_AutoRotateScreen_FontSize_DisplaySize_Tests -->
+    </classes>
+  </test> <!-- DisplayTest(failed) -->
+  <test thread-count="1" parallel="classes" name="Sound2Test(failed)">
+    <classes>
+      <class name="Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests">
+        <methods>
+          <include name="Teardown"/>
+          <include name="setup"/>
+          <include name="DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSoundTests"/>
+        </methods>
+      </class> <!-- Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests -->
+    </classes>
+  </test> <!-- Sound2Test(failed) -->
+  <test thread-count="1" parallel="classes" name="LocationTest(failed)">
+    <classes>
+      <class name="Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests">
+        <methods>
+          <include name="AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests"/>
+          <include name="Teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests -->
+    </classes>
+  </test> <!-- LocationTest(failed) -->
+  <test thread-count="1" parallel="classes" name="Accessibility3Test(failed)">
+    <classes>
+      <class name="Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests">
+        <methods>
+          <include name="Teardown"/>
+          <include name="setup"/>
+          <include name="MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test"/>
+        </methods>
+      </class> <!-- Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests -->
+    </classes>
+  </test> <!-- Accessibility3Test(failed) -->
+  <test thread-count="1" parallel="classes" name="DigitalWellbeingAndParantelControlsTest(failed)">
+    <classes>
+      <class name="DigitalWellbeingAndParantelControls.Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Tests">
+        <methods>
+          <include name="Teardown"/>
+          <include name="setup"/>
+          <include name="Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Test"/>
+        </methods>
+      </class> <!-- DigitalWellbeingAndParantelControls.Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Tests -->
+    </classes>
+  </test> <!-- DigitalWellbeingAndParantelControlsTest(failed) -->
+  <test thread-count="1" parallel="classes" name="GoogleTest(failed)">
+    <classes>
+      <class name="Google.Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Tests">
+        <methods>
+          <include name="Teardown"/>
+          <include name="Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Test"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Google.Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Tests -->
+    </classes>
+  </test> <!-- GoogleTest(failed) -->
+  <test thread-count="1" parallel="classes" name="SystemTest(failed)">
+    <classes>
+      <class name="System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests">
+        <methods>
+          <include name="setup"/>
+          <include name="Teardown"/>
+          <include name="LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test"/>
+        </methods>
+      </class> <!-- System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests -->
+    </classes>
+  </test> <!-- SystemTest(failed) -->
+  <test thread-count="1" parallel="classes" name="SoundRecorderTest(failed)">
+    <classes>
+      <class name="SoundRecorder.SoundRecordAndPlay">
+        <methods>
+          <include name="SoundRecorderTest"/>
+          <include name="setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- SoundRecorder.SoundRecordAndPlay -->
+    </classes>
+  </test> <!-- SoundRecorderTest(failed) -->
+  <test thread-count="1" parallel="classes" name="GalleryTest(failed)">
+    <classes>
+      <class name="Gallery.LaunchPictureFromGallery">
+        <methods>
+          <include name="GalleryTest"/>
+          <include name="setup"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- Gallery.LaunchPictureFromGallery -->
+    </classes>
+  </test> <!-- GalleryTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

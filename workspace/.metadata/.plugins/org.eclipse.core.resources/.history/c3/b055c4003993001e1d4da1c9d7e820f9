@@ -1,0 +1,86 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+class Device {
+    private String name;
+    private String testngXmlPath;
+
+    public Device(String name, String testngXmlPath) {
+        this.name = name;
+        this.testngXmlPath = testngXmlPath;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getTestngXmlPath() {
+        return testngXmlPath;
+    }
+}
+
+public class RunMultipleMavenProjects {
+
+    public static void main(String[] args) throws IOException, InterruptedException {
+        try {
+            // Run ADB command to get the list of connected devices
+            Process process = Runtime.getRuntime().exec("adb devices");
+
+            // Read the output of the command
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+
+            // Create a StringBuilder to store the devices
+            StringBuilder connectedDevices = new StringBuilder();
+
+            // Check if the line contains a connected device
+            while ((line = reader.readLine()) != null) {
+                if (line.endsWith("device")) {
+                    // Extract the device ID or name
+                    String[] deviceInfo = line.split("\\s+");
+                    String deviceId = deviceInfo[0];
+
+                    // Append the connected device information
+                    connectedDevices.append(deviceId).append(" ");
+                }
+            }
+
+            // Close the BufferedReader
+            reader.close();
+
+            // Check if any devices are connected
+            if (connectedDevices.length() > 0) {
+                // Split the devices by space and run TestNG for each
+                String[] devices = connectedDevices.toString().split("\\s+");
+                for (String deviceId : devices) {
+                    runTestNG(deviceId);
+                }
+            } else {
+                System.out.println("No devices connected.");
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void runTestNG(String deviceId) throws IOException, InterruptedException {
+        // Create a device object with a more meaningful name using the device ID
+        Device device = new Device("Device_" + deviceId, "/home/invlko-047/workspace/ORCA_board_Features_Automation/testng.xml");
+
+        // Print or store the connected device information
+        System.out.println("Connected device: " + device.getName());
+
+        // Execute the TestNG command for the connected device
+        String command = "java -cp /home/invlko-047/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/invlko-047/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/invlko-047/workspace/ORCA_board_Features_Automation org.testng.TestNG /home/invlko-047/workspace/ORCA_board_Features_Automation/testng.xml" + device.getTestngXmlPath();
+        Process process = Runtime.getRuntime().exec(command);
+        int exitCode = process.waitFor();
+        if (exitCode == 0) {
+            System.out.println("TestNG executed successfully for " + device.getName());
+        } else {
+            System.err.println("Error executing TestNG for " + device.getName());
+        }
+    }
+
+}

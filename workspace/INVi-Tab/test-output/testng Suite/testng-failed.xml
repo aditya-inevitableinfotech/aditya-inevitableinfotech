@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testng Suite]">
+  <test thread-count="5" name="Pages(failed)">
+    <classes>
+      <class name="pages.TestSuite10">
+        <methods>
+          <include name="CalculatorTest"/>
+          <include name="Teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pages.TestSuite10 -->
+      <class name="pages.TestSuite8">
+        <methods>
+          <include name="ContactsTest"/>
+          <include name="Teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pages.TestSuite8 -->
+      <class name="pages.TestSuite1">
+        <methods>
+          <include name="Teardown"/>
+          <include name="setup"/>
+          <include name="BluetoothTest"/>
+        </methods>
+      </class> <!-- pages.TestSuite1 -->
+      <class name="pages.TestSuite">
+        <methods>
+          <include name="Teardown"/>
+          <include name="setup"/>
+          <include name="WiFiTest"/>
+        </methods>
+      </class> <!-- pages.TestSuite -->
+      <class name="pages.TestSuite7">
+        <methods>
+          <include name="Teardown"/>
+          <include name="DisplayTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pages.TestSuite7 -->
+      <class name="pages.TestSuite5">
+        <methods>
+          <include name="Teardown"/>
+          <include name="MessagingTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pages.TestSuite5 -->
+      <class name="pages.TestSuite2">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="ClockTest"/>
+        </methods>
+      </class> <!-- pages.TestSuite2 -->
+      <class name="pages.TestSuite6">
+        <methods>
+          <include name="Teardown"/>
+          <include name="setup"/>
+          <include name="GalleryTest"/>
+        </methods>
+      </class> <!-- pages.TestSuite6 -->
+      <class name="pages.TestSuite4">
+        <methods>
+          <include name="Teardown"/>
+          <include name="DiallerTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- pages.TestSuite4 -->
+      <class name="pages.TestSuite3">
+        <methods>
+          <include name="setup"/>
+          <include name="SoundRecorderTest"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- pages.TestSuite3 -->
+    </classes>
+  </test> <!-- Pages(failed) -->
+</suite> <!-- Failed suite [testng Suite] -->

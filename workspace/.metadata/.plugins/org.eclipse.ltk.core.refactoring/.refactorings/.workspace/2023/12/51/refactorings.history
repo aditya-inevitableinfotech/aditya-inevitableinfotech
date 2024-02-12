@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ORCA_Data_Performance&apos;" deleteContents="true" description="Delete resource &apos;ORCA_Data_Performance&apos;" element1="/ORCA_Data_Performance" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1703135829802"/>
+</session>

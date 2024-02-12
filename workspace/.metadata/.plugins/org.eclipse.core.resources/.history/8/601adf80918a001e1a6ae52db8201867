@@ -1,0 +1,173 @@
+package ORCA;
+
+import java.net.URL;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.Activity;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.StartsActivity;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
+
+
+public class Bluetooth_WiFi_Camera_Generic_Test {
+	
+	
+AppiumDriver<MobileElement> driver;
+	
+	@BeforeMethod
+	public void setup() {
+		
+		try {
+			
+		DesiredCapabilities dc = new DesiredCapabilities();
+		
+		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME,"APPIUM");
+		dc.setCapability("appium-version", "1.22.3");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME,"sb52");
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION,"12");
+		dc.setCapability(MobileCapabilityType.UDID, "MTK0002310272208440");	
+		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
+		dc.setCapability(MobileCapabilityType.NO_RESET, "true");
+		dc.setCapability(MobileCapabilityType.FULL_RESET, "false");
+		dc.setCapability("uiautomator2ServerInstallTimeout", 9000); 
+		dc.setCapability("uiautomator2ServerLaunchTimeout", 9000);
+		dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,2000);
+	    dc.setCapability("automationName", "uiautomator2");
+		dc.setCapability("skipServerInstallation", false);
+		dc.setCapability("adbExecTimeout", 5000);
+		dc.setCapability("clearSystemFiles", true);
+		dc.setCapability("appWaitForLaunch", false);
+		dc.setCapability("suppressKillServer", true);
+		dc.setCapability("autoGrantPermissions", "true");
+		dc.setCapability("appWaitPackage", "io.appium.settings");
+		dc.setCapability("appWaitActivity", "io.appium.settings.Settings");
+		
+		
+		dc.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
+	    dc.setCapability(MobileCapabilityType.CLEAR_SYSTEM_FILES, true);
+		URL url = new URL("http://127.0.0.1:4723/wd/hub");
+		driver = new AndroidDriver<MobileElement>(url, dc);
+		driver.manage().timeouts().implicitlyWait(300, TimeUnit.SECONDS);
+		
+		}
+		catch (Exception exp) 
+		{
+			System.out.println("Cause is : "+exp.getCause());
+			System.out.println("Message is : "+exp.getMessage());
+			exp.printStackTrace();
+		}
+	}
+	
+	
+	@SuppressWarnings("rawtypes")
+	@Test(invocationCount = 100)
+	public void Bluetooth_WiFi_Camera_Generic_Tests() throws InterruptedException 
+	{
+		System.out.println("Bluetooth_WiFi_Camera_Generic_Testing is Started...");
+		
+		((AndroidDriver<MobileElement>)driver).lockDevice();
+		((AndroidDriver<MobileElement>)driver).unlockDevice();
+		TouchAction  action = new TouchAction(driver);	
+		org.openqa.selenium.Dimension size	=driver.manage().window().getSize();
+		int width=size.width;
+		int height=size.height;		
+		int middleOfX=width/2;
+		int startYCoordinate= (int)(height*.80);
+		int endYCoordinate= (int)(height*.20);	
+		action.press(PointOption.point(middleOfX, startYCoordinate))
+		.waitAction(WaitOptions.waitOptions(Duration.ofSeconds(2)))
+		.moveTo(PointOption.point(middleOfX, endYCoordinate)).release().perform();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElement(By.id("com.android.systemui:id/pinEntry")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElement(By.id("com.android.systemui:id/key2")).click();
+		driver.findElement(By.id("com.android.systemui:id/key0")).click();
+		driver.findElement(By.id("com.android.systemui:id/key2")).click();
+		driver.findElement(By.id("com.android.systemui:id/key2")).click();
+		driver.findElement(By.id("com.android.systemui:id/key_enter")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+//		//launch camera App
+		((StartsActivity) driver).startActivity(new Activity("org.codeaurora.snapcam", "com.android.camera.CameraLauncher"));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Video']")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElement(By.id("org.codeaurora.snapcam:id/video_button")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElement(By.id("org.codeaurora.snapcam:id/video_button")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Photo']")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElement(By.id("org.codeaurora.snapcam:id/shutter_button")).click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);Thread.sleep(2000);
+		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);Thread.sleep(2000);
+		//launch settings App
+        ((StartsActivity) driver).startActivity(new Activity("com.android.settings", "com.android.settings.Settings"));    
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElementByXPath("//android.widget.TextView[@text='Connected devices']").click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))" +".scrollIntoView(new UiSelector()" +".textMatches(\"" + "Connection preferences" + "\").instance(0))"));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		driver.findElementByXPath("//android.widget.TextView[@text='Connection preferences']").click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElementByXPath("//android.widget.TextView[@text='Bluetooth']").click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.id("android:id/switch_widget")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.id("android:id/switch_widget")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']")).click();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);Thread.sleep(2000);
+		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);		
+		//launch settings App
+        ((StartsActivity) driver).startActivity(new Activity("com.android.settings", "com.android.settings.Settings"));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElementByXPath("//android.widget.TextView[@text='Network & internet']").click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElementByXPath("//android.widget.TextView[@text='Internet']").click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.id("android:id/switch_widget")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.id("android:id/switch_widget")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']")).click();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(5000);
+		((AndroidDriver) driver).pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);Thread.sleep(2000);
+		((AndroidDriver<MobileElement>)driver).lockDevice();
+		
+		System.out.println("--------> Bluetooth_WiFi_Camera_Generic_Test Executed Successfully on ORCA Board <--------");
+	}
+	
+	@AfterMethod
+	public void Teardown() {
+		if (driver != null) {
+            driver.quit();
+        }
+	}
+
+}

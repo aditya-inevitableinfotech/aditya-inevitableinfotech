@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
+  <test thread-count="1" name="F_Droid(failed)" parallel="classes">
+    <classes>
+      <class name="F_Droid.InstallThirdPartyApp">
+        <methods>
+          <include name="setup"/>
+          <include name="Teardown"/>
+          <include name="F_DroidTest"/>
+        </methods>
+      </class> <!-- F_Droid.InstallThirdPartyApp -->
+    </classes>
+  </test> <!-- F_Droid(failed) -->
+</suite> <!-- Failed suite [Suite] -->

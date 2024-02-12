@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ORCA features Automation Test Suite" verbose="10"  parallel="classes" thread-count="10">
+   
+    
+    <listeners>
+        <listener class-name="PasswordAndAccounts.AutomaticallySyncDataTest" />
+        <listener class-name="PasswordAndAccounts.TestNameListener" />
+    </listeners>
+    <test name="Automatically Sync Data Test Cases">
+        <packages>
+            <package name="PasswordAndAccounts" />
+        </packages>
+    </test>
+    
+    
+     <listeners>
+        <listener class-name="Accessibility.TextAndDisplay_FontSize_DiaplaySize_BoldText_ColorInversion_HighContrastText_ColorCorrection_RemoveAnimation_LargeMousePointer_DarkTheme_Magnification_MagnificationShortcut_MagnificationType_Tests" />
+        <listener class-name="Accessibility.TestNameListener" />
+    </listeners>
+    <test name="TextAndDisplay_FontSize_DiaplaySize_BoldText_ColorInversion_HighContrastText_ColorCorrection_RemoveAnimation_LargeMousePointer_DarkTheme_Magnification_MagnificationShortcut_MagnificationType_Test Cases">
+        <packages>
+            <package name="Accessibility" />
+        </packages>
+    </test>
+  
+   
+      <listeners>
+        <listener class-name="Sound2.DoNotDisturb_PhoneRingtone_Media_VibrateForCalls_DefaultNotificationSound_DefaultAlarmSound_DialPadTones_ScreenLockingSound_ChargingSoundsAndVibration_TouchSounds_TouchVibration_Tests" />
+        <listener class-name="Sound2.TestNameListener" />
+    </listeners>
+    <test name="DoNotDisturb_PhoneRingtone_Media_VibrateForCalls_DefaultNotificationSound_DefaultAlarmSound_DialPadTones_ScreenLockingSound_ChargingSoundsAndVibration_TouchSounds_TouchVibration_Test Cases">
+        <packages>
+            <package name="Sound2" />
+        </packages>
+    </test>
+   
+      
+   
+      <listeners>
+        <listener class-name="Contacts.AddContactsTest" />
+        <listener class-name="Contacts.TestNameListener" />
+    </listeners>
+    <test name="Add contacts Test Cases">
+        <packages>
+            <package name="Contacts" />
+        </packages>
+    </test> 
+ 
+    
+     <listeners>
+        <listener class-name="Clock.SetAlarmTest" />
+        <listener class-name="Clock.TestNameListener" />
+    </listeners>
+    <test name="Set Alarm Test Cases">
+        <packages>
+            <package name="Clock" />
+        </packages>
+    </test> 
+    
+    
+     <listeners>
+        <listener class-name="SoundRecorder.SoundRecordAndPlayTest" />
+        <listener class-name="SoundRecorder.TestNameListener" />
+    </listeners>
+    <test name="Sound record and play Test Cases">
+        <packages>
+            <package name="SoundRecorder" />
+        </packages>
+    </test> 
+   
+    
+     <listeners>
+        <listener class-name="Sound.MediaVolume_CallVolume_RingAndNotificationVolume_AlarmVolume_Tests" />
+        <listener class-name="Sound.TestNameListener" />
+    </listeners>
+    <test name="MediaVolume_CallVolume_RingAndNotificationVolume_AlarmVolume_Test Cases">
+        <packages>
+            <package name="Sound" />
+        </packages>
+    </test>
+    
+   
+    
+       <listeners>
+        <listener class-name="Apps.DefaultApps_UnusedApp_SpecialApp_Tests" />
+        <listener class-name="Apps.TestNameListener" />
+    </listeners>
+    <test name="DefaultApps_UnusedApp_SpecialApp_Test Cases">
+        <packages>
+            <package name="Apps" />
+        </packages>
+    </test>
+     
+     
+      <listeners>
+        <listener class-name="ConnectedDevices.USB_PairNewDevice_ConnectionPreferences_Bluetooth_Cast_Printing_Tests" />
+        <listener class-name="ConnectedDevices.TestNameListener" />
+    </listeners>
+    <test name="USB_PairNewDevice_ConnectionPreferences_Bluetooth_Cast_Printing_Test Cases">
+        <packages>
+            <package name="ConnectedDevices" />
+        </packages>
+    </test>
+          
+    
+    <listeners>
+        <listener class-name="NetworkAndInternet.Internet_WiFi_NetworkPreferences_AirplaneMode_HotspotAndTethering_WiFiHotspot_USBTetherin_BluetoothTethering_DataSaver_VPN_PrivateDNS_Tests" />
+        <listener class-name="NetworkAndInternet.TestNameListener" />
+    </listeners>
+    <test name="Internet_WiFi_NetworkPreferences_AirplaneMode_HotspotAndTethering_WiFiHotspot_USBTetherin_BluetoothTethering_DataSaver_VPN_PrivateDNS_Test Cases">
+        <packages>
+            <package name="NetworkAndInternet" />
+        </packages>
+    </test>
+    
+    
+    
+     <listeners>
+        <listener class-name="System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_Tests" />
+        <listener class-name="System.TestNameListener" />
+    </listeners>
+    <test name="LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_Test Cases">
+        <packages>
+            <package name="System" />
+        </packages>
+    </test> 
+    
+    
+      <listeners>
+        <listener class-name="Security.ScreenLock_DeviceAdminApps_EncryptionAndCredentials_AppPinning_Tests" />
+        <listener class-name="Security.TestNameListener" />
+    </listeners>
+    <test name="ScreenLock_DeviceAdminApps_EncryptionAndCredentials_AppPinning_Test Cases">
+        <packages>
+            <package name="Security" />
+        </packages>
+    </test>
+    
+   
+      <listeners>
+        <listener class-name="Camera.CapturePictureVideoTest" />
+        <listener class-name="Camera.TestNameListener" />
+    </listeners>
+    <test name="Capture picture video Test Cases">
+        <packages>
+            <package name="Camera" />
+        </packages>
+    </test> 
+    
+    
+       <listeners>
+        <listener class-name="Gallery.LaunchPictureFromGalleryTest" />
+        <listener class-name="Gallery.TestNameListener" />
+    </listeners>
+    <test name="Launch picture from gallery Test Cases">
+        <packages>
+            <package name="Gallery" />
+        </packages>
+    </test> 
+    
+ 
+  <listeners>
+        <listener class-name="Messaging.SMSTest" />
+        <listener class-name="Messaging.TestNameListener" />
+    </listeners>
+    <test name="SMS Test Cases">
+        <packages>
+            <package name="Messaging" />
+        </packages>
+    </test> 
+    
+    
+     <listeners>
+        <listener class-name="Phone.DiallerTest" />
+        <listener class-name="Phone.TestNameListener" />
+    </listeners>
+    <test name="Dialler Test Cases">
+        <packages>
+            <package name="Phone" />
+        </packages>
+    </test>   
+    
+   
+      <listeners>
+        <listener class-name="Battery.BatteryUsage_BatterySaver_BatteryManager_BatteryPercentage_Tests" />
+        <listener class-name="Battery.TestNameListener" />
+    </listeners>
+    <test name="BatteryUsage_BatterySaver_BatteryManager_BatteryPercentage_Test Cases">
+        <packages>
+            <package name="Battery" />
+        </packages>
+    </test>
+    
+    
+     <listeners>
+        <listener class-name="Display.BrightnessLevel_LockScreen_ScreenTimeout_DarkTheme_FontSize_DisplaySize_Colors_AutoRotateScreen_ScreenSaver_Tests" />
+        <listener class-name="Display.TestNameListener" />
+    </listeners>
+    <test name="BrightnessLevel_LockScreen_ScreenTimeout_DarkTheme_FontSize_DisplaySize_Colors_AutoRotateScreen_ScreenSaver_Test Cases">
+        <packages>
+            <package name="Display" />
+        </packages>
+    </test>
+    
+   
+      <listeners>
+        <listener class-name="Storage.FreeUpSpace_System_Apps_Audio_Trash_DocumentsAndOther_Games_Videos_Images_Tests" />
+        <listener class-name="Storage.TestNameListener" />
+    </listeners>
+    <test name="FreeUpSpace_System_Apps_Audio_Trash_DocumentsAndOther_Games_Videos_Images_Test Cases">
+        <packages>
+            <package name="Storage" />
+        </packages>
+    </test>
+    
+    
+  
+     <listeners>
+        <listener class-name="AboutPhone.DeviceName_LegalInformation_SIMStatusSimSlot1and2_Model_IMEISimSlot1and2_AndroidVersion_WiFiMACaddress_BuildNumber_Tests" />
+        <listener class-name="AboutPhone.TestNameListener" />
+    </listeners>
+    <test name="DeviceName_LegalInformation_SIMStatusSimSlot1and2_Model_IMEISimSlot1and2_AndroidVersion_WiFiMACaddress_BuildNumber_Test Cases">
+        <packages>
+            <package name="AboutPhone" />
+        </packages>
+    </test> 
+    
+    
+       
+   <listeners>
+        <listener class-name="Accessibility2.Timingcontrols_Systemcontrols_VibrationAndHapticStrength_CaptionPreferences_AudioAdjustment_AccessibilityShortcutsTests" />
+        <listener class-name="Accessibility2.TestNameListener" />
+    </listeners>
+    <test name="Timingcontrols_Systemcontrols_VibrationAndHapticStrength_CaptionPreferences_AudioAdjustment_AccessibilityShortcutsTest Cases">
+        <packages>
+            <package name="Accessibility2" />
+        </packages>
+    </test>
+    
+   </suite> 
+   

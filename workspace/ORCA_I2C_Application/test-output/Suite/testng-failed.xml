@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="classes" name="AutomationTest(failed)">
+    <classes>
+      <class name="ORCA.koshexAppTest">
+        <methods>
+          <include name="koshexAppTesting"/>
+          <include name="Teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- ORCA.koshexAppTest -->
+    </classes>
+  </test> <!-- AutomationTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

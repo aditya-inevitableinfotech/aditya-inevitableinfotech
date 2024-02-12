@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">37 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">37 methods, 6 failed,   31 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests" hash-for-method="AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests">AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Camera.CapturePictureVideo" hash-for-method="CameraTest">CameraTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Contacts.AddContacts" hash-for-method="ContactsTest">ContactsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Gallery.LaunchPictureFromGallery" hash-for-method="GalleryTest">GalleryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests" hash-for-method="LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test">LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests" hash-for-method="MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test">MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Accessibility2.AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Tests" hash-for-method="AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Test">AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Google.Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Tests" hash-for-method="Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Test">Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="NetworkAndInternet.Airplane_mode_OnOff" hash-for-method="AirplaneModeTest">AirplaneModeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ConnectionPreferences2.AndroidAuto" hash-for-method="AndroidAutoTest">AndroidAutoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Accounts.AutomaticallySyncAppData" hash-for-method="AutomaticallySyncAppDataTest">AutomaticallySyncAppDataTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Battery.BatterySaver_BatteryManager_BatteryPercentage" hash-for-method="BatterySaver_BatteryManager_BatteryPercentageTest">BatterySaver_BatteryManager_BatteryPercentageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Bluetooth.BluetoothToggleButtonOnOff" hash-for-method="BluetoothTest">BluetoothTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Calculator.CalculateNumbers" hash-for-method="CalculatorTest">CalculatorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Clock.SetAlarm" hash-for-method="ClockTest">ClockTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="PrivateDNS.SelectDNSMode" hash-for-method="DNSModeTest">DNSModeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DigitalWellbeingAndParantelControls.Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Tests" hash-for-method="Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Test">Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DataSaver.UseDataSaverbuttonOnOff" hash-for-method="DataSaverTest">DataSaverTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="AppsAndNotifications3.Defaultapps" hash-for-method="DefaultappsTest">DefaultappsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="System2.DeveloperOptionsTest" hash-for-method="DeveloperOptions_Test">DeveloperOptions_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="AboutTablet.DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Tests" hash-for-method="DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Test">DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Dialer.DialANumber" hash-for-method="DialerTest">DialerTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Display.AdjustScreenBrightnesslevel_Darktheme_NightLight_Screentimeout_AutoRotateScreen_FontSize_DisplaySize_Tests" hash-for-method="DisplayTest">DisplayTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Display2.ScreenSaverTest" hash-for-method="DisplayTest">DisplayTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests" hash-for-method="DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSoundTests">DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSoundTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="DuraSpeed.DuraSpeedAndApps_ToggleButtonOnOff_Tests" hash-for-method="DuraSpeedAndApps_ToggleButtonOnOff_Test">DuraSpeedAndApps_ToggleButtonOnOff_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Sound.MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTests" hash-for-method="MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTest">MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="ConnectionPreferences.NearbyShare" hash-for-method="NearbyShareTest">NearbyShareTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="AppsAndNotifications.NotificationsTest" hash-for-method="NotificationsFeaturesTest">NotificationsFeaturesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Privacy.PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnostics_Tests" hash-for-method="PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnosticsTests">PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnosticsTests</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Storage.PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Tests" hash-for-method="PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Test">PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="AppsAndNotifications2.Screentime" hash-for-method="ScreentimeTest">ScreentimeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Security.SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Tests" hash-for-method="SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Test">SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Accessibility.SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme_Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimations_Tests" hash-for-method="SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme__Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimationsTest">SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme__Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimationsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="SoundRecorder.SoundRecordAndPlay" hash-for-method="SoundRecorderTest">SoundRecorderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WiFi.WiFiToggleButtonOnOff" hash-for-method="WiFiTest">WiFiTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="HotspotAndTethering.WiFi_USB_Bluetooth_tethering" hash-for-method="WiFi_USB_Bluetooth_Tethering_Test">WiFi_USB_Bluetooth_Tethering_Test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Gallery.LaunchPictureFromGallery</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GalleryTest">
+                  </a> <!-- GalleryTest -->
+                  <span class="method-name">GalleryTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;invlko047-Latitude-7490&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-35-generic&apos;, java.version: &apos;1.8.0_362&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.pho..., appPackage: com.google.android.apps.pho..., appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.google.android.apps.pho..., appPackage: com.google.android.apps.pho..., appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: 729dc5b5-5a94-448f-b59a-1743a45a769f
+*** Element info: {Using=id, value=com.google.android.apps.photosgo:id/single_photo}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Gallery.LaunchPictureFromGallery.GalleryTest(LaunchPictureFromGallery.java:70)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Contacts.AddContacts</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ContactsTest">
+                  </a> <!-- ContactsTest -->
+                  <span class="method-name">ContactsTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;invlko047-Latitude-7490&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-35-generic&apos;, java.version: &apos;1.8.0_362&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.dialer.e..., appPackage: com.google.android.dialer, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.google.android.dialer.e..., appPackage: com.google.android.dialer, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: f499e8d3-386f-4c85-bd38-20cff2e0ea9b
+*** Element info: {Using=id, value=com.google.android.dialer:id/tab_contacts}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Contacts.AddContacts.ContactsTest(AddContacts.java:66)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test">
+                  </a> <!-- MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test -->
+                  <span class="method-name">MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;invlko047-Latitude-7490&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-35-generic&apos;, java.version: &apos;1.8.0_362&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: 357cd128-dd17-49ad-8d53-79c4648c9c9c
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Shortcut from lock screen&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test(MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests.java:152)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test">
+                  </a> <!-- LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test -->
+                  <span class="method-name">LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;invlko047-Latitude-7490&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-35-generic&apos;, java.version: &apos;1.8.0_362&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: f1391889-f2cf-4e55-baa2-cd2b92f2782f
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text=&apos;Save recent screenshots in clipboard&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test(LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests.java:254)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Camera.CapturePictureVideo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CameraTest">
+                  </a> <!-- CameraTest -->
+                  <span class="method-name">CameraTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;invlko047-Latitude-7490&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-35-generic&apos;, java.version: &apos;1.8.0_362&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mediatek.camera.CameraL..., appPackage: com.mediatek.camera, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.mediatek.camera.CameraL..., appPackage: com.mediatek.camera, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: 82a9c9b4-2719-4a81-a4b6-efcc63f40786
+*** Element info: {Using=id, value=com.mediatek.camera:id/shutter_button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at Camera.CapturePictureVideo.CameraTest(CapturePictureVideo.java:65)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests">
+                  </a> <!-- AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests -->
+                  <span class="method-name">AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: androidx.test.uiautomator.StaleObjectException
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;invlko047-Latitude-7490&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-35-generic&apos;, java.version: &apos;1.8.0_362&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.android.settings.Settings, appPackage: com.android.settings, appium-version: 1.22.3, automationName: UiAutomator2, deviceId: 0123456789ABCDEF, deviceName: along_8765, fullReset: false, noReset: true, platformName: android, platformVersion: 11, suppressKillServer: true, udid: 192.168.18.71:5555}, deviceApiLevel: 30, deviceId: 0123456789ABCDEF, deviceManufacturer: alps, deviceModel: along_8765, deviceName: 192.168.18.71:5555, deviceScreenDensity: 180, deviceScreenSize: 800x1280, deviceUDID: 192.168.18.71:5555, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 1.125, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 27, suppressKillServer: true, takesScreenshot: true, udid: 192.168.18.71:5555, viewportRect: {height: 1199, left: 0, top: 27, width: 800}, warnings: {}, webStorageEnabled: false}
+Session ID: d26955af-fd09-4a59-bfac-c2a318fef39d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests(AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ConnectionPreferences2.AndroidAuto</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AndroidAutoTest">
+                  </a> <!-- AndroidAutoTest -->
+                  <span class="method-name">AndroidAutoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Battery.BatterySaver_BatteryManager_BatteryPercentage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BatterySaver_BatteryManager_BatteryPercentageTest">
+                  </a> <!-- BatterySaver_BatteryManager_BatteryPercentageTest -->
+                  <span class="method-name">BatterySaver_BatteryManager_BatteryPercentageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">NetworkAndInternet.Airplane_mode_OnOff</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AirplaneModeTest">
+                  </a> <!-- AirplaneModeTest -->
+                  <span class="method-name">AirplaneModeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DigitalWellbeingAndParantelControls.Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Test">
+                  </a> <!-- Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Test -->
+                  <span class="method-name">Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Accounts.AutomaticallySyncAppData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AutomaticallySyncAppDataTest">
+                  </a> <!-- AutomaticallySyncAppDataTest -->
+                  <span class="method-name">AutomaticallySyncAppDataTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ConnectionPreferences.NearbyShare</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NearbyShareTest">
+                  </a> <!-- NearbyShareTest -->
+                  <span class="method-name">NearbyShareTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Dialer.DialANumber</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DialerTest">
+                  </a> <!-- DialerTest -->
+                  <span class="method-name">DialerTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DataSaver.UseDataSaverbuttonOnOff</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DataSaverTest">
+                  </a> <!-- DataSaverTest -->
+                  <span class="method-name">DataSaverTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Bluetooth.BluetoothToggleButtonOnOff</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BluetoothTest">
+                  </a> <!-- BluetoothTest -->
+                  <span class="method-name">BluetoothTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">WiFi.WiFiToggleButtonOnOff</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WiFiTest">
+                  </a> <!-- WiFiTest -->
+                  <span class="method-name">WiFiTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Accessibility.SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme_Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimations_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme__Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimationsTest">
+                  </a> <!-- SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme__Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimationsTest -->
+                  <span class="method-name">SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme__Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimationsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AppsAndNotifications2.Screentime</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ScreentimeTest">
+                  </a> <!-- ScreentimeTest -->
+                  <span class="method-name">ScreentimeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DuraSpeed.DuraSpeedAndApps_ToggleButtonOnOff_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DuraSpeedAndApps_ToggleButtonOnOff_Test">
+                  </a> <!-- DuraSpeedAndApps_ToggleButtonOnOff_Test -->
+                  <span class="method-name">DuraSpeedAndApps_ToggleButtonOnOff_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Clock.SetAlarm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ClockTest">
+                  </a> <!-- ClockTest -->
+                  <span class="method-name">ClockTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Accessibility2.AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Test">
+                  </a> <!-- AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Test -->
+                  <span class="method-name">AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Display.AdjustScreenBrightnesslevel_Darktheme_NightLight_Screentimeout_AutoRotateScreen_FontSize_DisplaySize_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DisplayTest">
+                  </a> <!-- DisplayTest -->
+                  <span class="method-name">DisplayTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Storage.PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Test">
+                  </a> <!-- PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Test -->
+                  <span class="method-name">PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSoundTests">
+                  </a> <!-- DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSoundTests -->
+                  <span class="method-name">DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSoundTests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">SoundRecorder.SoundRecordAndPlay</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SoundRecorderTest">
+                  </a> <!-- SoundRecorderTest -->
+                  <span class="method-name">SoundRecorderTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Sound.MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTest">
+                  </a> <!-- MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTest -->
+                  <span class="method-name">MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Security.SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Test">
+                  </a> <!-- SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Test -->
+                  <span class="method-name">SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Privacy.PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnostics_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnosticsTests">
+                  </a> <!-- PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnosticsTests -->
+                  <span class="method-name">PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnosticsTests</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AppsAndNotifications3.Defaultapps</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DefaultappsTest">
+                  </a> <!-- DefaultappsTest -->
+                  <span class="method-name">DefaultappsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Google.Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Test">
+                  </a> <!-- Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Test -->
+                  <span class="method-name">Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AppsAndNotifications.NotificationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NotificationsFeaturesTest">
+                  </a> <!-- NotificationsFeaturesTest -->
+                  <span class="method-name">NotificationsFeaturesTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AboutTablet.DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Test">
+                  </a> <!-- DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Test -->
+                  <span class="method-name">DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Calculator.CalculateNumbers</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CalculatorTest">
+                  </a> <!-- CalculatorTest -->
+                  <span class="method-name">CalculatorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Display2.ScreenSaverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DisplayTest">
+                  </a> <!-- DisplayTest -->
+                  <span class="method-name">DisplayTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">PrivateDNS.SelectDNSMode</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DNSModeTest">
+                  </a> <!-- DNSModeTest -->
+                  <span class="method-name">DNSModeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">System2.DeveloperOptionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeveloperOptions_Test">
+                  </a> <!-- DeveloperOptions_Test -->
+                  <span class="method-name">DeveloperOptions_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">HotspotAndTethering.WiFi_USB_Bluetooth_tethering</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WiFi_USB_Bluetooth_Tethering_Test">
+                  </a> <!-- WiFi_USB_Bluetooth_Tethering_Test -->
+                  <span class="method-name">WiFi_USB_Bluetooth_Tethering_Test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/invlko-047/workspace/INVi-Tab/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;WiFiTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;WiFi.WiFiToggleButtonOnOff&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- WiFiTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;NetworkAndInternetTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;NetworkAndInternet.Airplane_mode_OnOff&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NetworkAndInternetTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;HotspotAndTetheringTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;HotspotAndTethering.WiFi_USB_Bluetooth_tethering&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HotspotAndTetheringTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;DataSaverTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DataSaver.UseDataSaverbuttonOnOff&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DataSaverTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;PrivateDNSTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;PrivateDNS.SelectDNSMode&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PrivateDNSTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;BluetoothTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Bluetooth.BluetoothToggleButtonOnOff&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BluetoothTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;ConnectionPreferencesTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ConnectionPreferences.NearbyShare&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ConnectionPreferencesTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;ConnectionPreferences2Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ConnectionPreferences2.AndroidAuto&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ConnectionPreferences2Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;AppsAndNotificationsTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AppsAndNotifications.NotificationsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AppsAndNotificationsTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;AppsAndNotifications2Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AppsAndNotifications2.Screentime&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AppsAndNotifications2Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;AppsAndNotifications3Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AppsAndNotifications3.Defaultapps&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AppsAndNotifications3Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;BatteryTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Battery.BatterySaver_BatteryManager_BatteryPercentage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BatteryTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;DisplayTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Display.AdjustScreenBrightnesslevel_Darktheme_NightLight_Screentimeout_AutoRotateScreen_FontSize_DisplaySize_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DisplayTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Display2Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Display2.ScreenSaverTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Display2Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;SoundTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Sound.MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SoundTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Sound2Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sound2Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;StorageTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Storage.PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- StorageTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;PrivacyTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Privacy.PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnostics_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PrivacyTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;LocationTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LocationTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;SecurityTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Security.SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SecurityTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;AccountsTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Accounts.AutomaticallySyncAppData&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AccountsTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;AccessibilityTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Accessibility.SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme_Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimations_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AccessibilityTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Accessibility2Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Accessibility2.AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Accessibility2Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Accessibility3Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Accessibility3Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;DigitalWellbeingAndParantelControlsTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DigitalWellbeingAndParantelControls.Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DigitalWellbeingAndParantelControlsTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;GoogleTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Google.Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GoogleTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;DuraSpeedTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DuraSpeed.DuraSpeedAndApps_ToggleButtonOnOff_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DuraSpeedTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;SystemTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SystemTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;System2Test&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;System2.DeveloperOptionsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- System2Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;AboutTabletTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AboutTablet.DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AboutTabletTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;ClockTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Clock.SetAlarm&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ClockTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;SoundRecorderTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SoundRecorder.SoundRecordAndPlay&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SoundRecorderTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;DialerTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Dialer.DialANumber&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DialerTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;GalleryTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Gallery.LaunchPictureFromGallery&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GalleryTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;ContactsTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Contacts.AddContacts&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ContactsTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;CameraTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Camera.CapturePictureVideo&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CameraTest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;CalculatorTest&quot; parallel=&quot;classes&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Calculator.CalculateNumbers&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CalculatorTest --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">WiFiTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">NetworkAndInternetTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">HotspotAndTetheringTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DataSaverTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PrivateDNSTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BluetoothTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ConnectionPreferencesTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ConnectionPreferences2Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AppsAndNotificationsTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AppsAndNotifications2Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AppsAndNotifications3Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BatteryTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DisplayTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Display2Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SoundTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sound2Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">StorageTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PrivacyTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LocationTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SecurityTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AccountsTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AccessibilityTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Accessibility2Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Accessibility3Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DigitalWellbeingAndParantelControlsTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GoogleTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DuraSpeedTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SystemTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">System2Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">AboutTabletTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ClockTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SoundRecorderTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DialerTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GalleryTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ContactsTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CameraTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CalculatorTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(37);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Test')
+data.setCell(0, 2, 'DigitalWellbeingAndParantelControls.Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Tests')
+data.setCell(0, 3, 524713);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSoundTests')
+data.setCell(1, 2, 'Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests')
+data.setCell(1, 3, 349677);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test')
+data.setCell(2, 2, 'System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests')
+data.setCell(2, 3, 256551);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AndroidAutoTest')
+data.setCell(3, 2, 'ConnectionPreferences2.AndroidAuto')
+data.setCell(3, 3, 208294);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Test')
+data.setCell(4, 2, 'Google.Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Tests')
+data.setCell(4, 3, 197738);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ScreentimeTest')
+data.setCell(5, 2, 'AppsAndNotifications2.Screentime')
+data.setCell(5, 3, 187806);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme__Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimationsTest')
+data.setCell(6, 2, 'Accessibility.SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme_Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimations_Tests')
+data.setCell(6, 3, 173941);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'DeveloperOptions_Test')
+data.setCell(7, 2, 'System2.DeveloperOptionsTest')
+data.setCell(7, 3, 154132);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Test')
+data.setCell(8, 2, 'Accessibility2.AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Tests')
+data.setCell(8, 3, 119716);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Test')
+data.setCell(9, 2, 'AboutTablet.DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Tests')
+data.setCell(9, 3, 114644);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'NotificationsFeaturesTest')
+data.setCell(10, 2, 'AppsAndNotifications.NotificationsTest')
+data.setCell(10, 3, 106731);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnosticsTests')
+data.setCell(11, 2, 'Privacy.PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnostics_Tests')
+data.setCell(11, 3, 96559);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Test')
+data.setCell(12, 2, 'Security.SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Tests')
+data.setCell(12, 3, 84320);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'NearbyShareTest')
+data.setCell(13, 2, 'ConnectionPreferences.NearbyShare')
+data.setCell(13, 3, 76128);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'DefaultappsTest')
+data.setCell(14, 2, 'AppsAndNotifications3.Defaultapps')
+data.setCell(14, 3, 73926);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test')
+data.setCell(15, 2, 'Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests')
+data.setCell(15, 3, 72498);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'SoundRecorderTest')
+data.setCell(16, 2, 'SoundRecorder.SoundRecordAndPlay')
+data.setCell(16, 3, 67661);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Test')
+data.setCell(17, 2, 'Storage.PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Tests')
+data.setCell(17, 3, 60522);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTest')
+data.setCell(18, 2, 'Sound.MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTests')
+data.setCell(18, 3, 46529);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'DisplayTest')
+data.setCell(19, 2, 'Display.AdjustScreenBrightnesslevel_Darktheme_NightLight_Screentimeout_AutoRotateScreen_FontSize_DisplaySize_Tests')
+data.setCell(19, 3, 45847);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'DialerTest')
+data.setCell(20, 2, 'Dialer.DialANumber')
+data.setCell(20, 3, 44679);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'DuraSpeedAndApps_ToggleButtonOnOff_Test')
+data.setCell(21, 2, 'DuraSpeed.DuraSpeedAndApps_ToggleButtonOnOff_Tests')
+data.setCell(21, 3, 30584);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'AutomaticallySyncAppDataTest')
+data.setCell(22, 2, 'Accounts.AutomaticallySyncAppData')
+data.setCell(22, 3, 26489);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'BatterySaver_BatteryManager_BatteryPercentageTest')
+data.setCell(23, 2, 'Battery.BatterySaver_BatteryManager_BatteryPercentage')
+data.setCell(23, 3, 25080);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'CalculatorTest')
+data.setCell(24, 2, 'Calculator.CalculateNumbers')
+data.setCell(24, 3, 20474);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'DataSaverTest')
+data.setCell(25, 2, 'DataSaver.UseDataSaverbuttonOnOff')
+data.setCell(25, 3, 20119);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'ClockTest')
+data.setCell(26, 2, 'Clock.SetAlarm')
+data.setCell(26, 3, 17708);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'DNSModeTest')
+data.setCell(27, 2, 'PrivateDNS.SelectDNSMode')
+data.setCell(27, 3, 15049);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'WiFi_USB_Bluetooth_Tethering_Test')
+data.setCell(28, 2, 'HotspotAndTethering.WiFi_USB_Bluetooth_tethering')
+data.setCell(28, 3, 12526);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'DisplayTest')
+data.setCell(29, 2, 'Display2.ScreenSaverTest')
+data.setCell(29, 3, 12356);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'GalleryTest')
+data.setCell(30, 2, 'Gallery.LaunchPictureFromGallery')
+data.setCell(30, 3, 12229);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'CameraTest')
+data.setCell(31, 2, 'Camera.CapturePictureVideo')
+data.setCell(31, 3, 12214);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'ContactsTest')
+data.setCell(32, 2, 'Contacts.AddContacts')
+data.setCell(32, 3, 12178);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'BluetoothTest')
+data.setCell(33, 2, 'Bluetooth.BluetoothToggleButtonOnOff')
+data.setCell(33, 3, 11991);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'WiFiTest')
+data.setCell(34, 2, 'WiFi.WiFiToggleButtonOnOff')
+data.setCell(34, 3, 9432);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'AirplaneModeTest')
+data.setCell(35, 2, 'NetworkAndInternet.Airplane_mode_OnOff')
+data.setCell(35, 3, 8404);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests')
+data.setCell(36, 2, 'Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests')
+data.setCell(36, 3, 8047);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 55 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">WiFi.WiFiToggleButtonOnOff</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WiFiTest</span>
+                <span class="method-start">14499 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">23935 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">NetworkAndInternet.Airplane_mode_OnOff</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">24931 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AirplaneModeTest</span>
+                <span class="method-start">35454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">43859 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">HotspotAndTethering.WiFi_USB_Bluetooth_tethering</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">44339 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WiFi_USB_Bluetooth_Tethering_Test</span>
+                <span class="method-start">54873 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">67400 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DataSaver.UseDataSaverbuttonOnOff</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">68527 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DataSaverTest</span>
+                <span class="method-start">80172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">100291 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">PrivateDNS.SelectDNSMode</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">101236 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DNSModeTest</span>
+                <span class="method-start">112277 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">127327 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Bluetooth.BluetoothToggleButtonOnOff</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">128536 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BluetoothTest</span>
+                <span class="method-start">139378 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">151369 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ConnectionPreferences.NearbyShare</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">152907 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NearbyShareTest</span>
+                <span class="method-start">165628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">241756 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ConnectionPreferences2.AndroidAuto</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">242427 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AndroidAutoTest</span>
+                <span class="method-start">252690 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">460985 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AppsAndNotifications.NotificationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">462117 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NotificationsFeaturesTest</span>
+                <span class="method-start">472591 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">579322 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AppsAndNotifications2.Screentime</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">580200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ScreentimeTest</span>
+                <span class="method-start">590848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">778654 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AppsAndNotifications3.Defaultapps</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">779542 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DefaultappsTest</span>
+                <span class="method-start">789979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">863905 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Battery.BatterySaver_BatteryManager_BatteryPercentage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">864460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BatterySaver_BatteryManager_BatteryPercentageTest</span>
+                <span class="method-start">874902 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">899982 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Display.AdjustScreenBrightnesslevel_Darktheme_NightLight_Screentimeout_AutoRotateScreen_FontSize_DisplaySize_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">900535 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DisplayTest</span>
+                <span class="method-start">911353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">957201 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Display2.ScreenSaverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">958156 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DisplayTest</span>
+                <span class="method-start">968616 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">980973 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Sound.MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">981791 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MediaVolumeCallVolumeRingAndNotificationVolumeAlarmVolumeTest</span>
+                <span class="method-start">992348 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">1038877 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Sound2.DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSound_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1039913 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DoNotDisturb_Media_ShortcutToPreventRinging_PhoneRingtone_DefaultNotificationSound_DefaultAlarmSoundTests</span>
+                <span class="method-start">1050437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">1400115 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Storage.PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1400959 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PhotosAndVideos_MusicAndAudio_Games_MoviesAndTVApps_OtherApps_Files_System_Test</span>
+                <span class="method-start">1411431 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">1471953 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Privacy.PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnostics_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1472773 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PermissionManager_ShowPasswords_NotificatonOnLockScreen_AutofillServiceFromGoogle_GoogleLocationHistory_ActivityControls_Ads_UsageAndDiagnosticsTests</span>
+                <span class="method-start">1483323 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">1579882 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Location.AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharing_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1580630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AppAccessToLocation_WiFiAndBluetoothScanning_EmergencyLocationService_GoogleLocationAccuracy_GoogleLocationHistory_GoogleLocationSharingTests</span>
+                <span class="method-start">1591176 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">1599227 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Security.SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1600006 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SecurityUpdate_FindMyDevice_ScreenLock_SmartLock_DeviceAdminApps_EncryptionAndCredentials_TrustAgents_AppPinning_Test</span>
+                <span class="method-start">1610515 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">1694835 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Accounts.AutomaticallySyncAppData</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1695561 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AutomaticallySyncAppDataTest</span>
+                <span class="method-start">1708046 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">1734535 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Accessibility.SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme_Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimations_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1735000 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SelectToSpeak_TallBack_TextToSpeechOutput_FontSize_DisplaySize_DarkTheme__Magnification_ColorCorrection_ColorInversion_LargeMousePointer_RemoveAnimationsTest</span>
+                <span class="method-start">1745251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">1919192 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Accessibility2.AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1919742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AcessibilityMenu_SwitchAccess_Autoclick_PowerButtonsEndsCall_AutoRotateScreen_TouchAndHoldDelayTimeToTakeAction_VibrationAndHapticStrength_SystemNavigation_Test</span>
+                <span class="method-start">1930454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">2050171 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Accessibility3.MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2051208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">MonoAudio_AudioBalance_CaptionPreferences_HighContrastText_ShortcutFromLockScreen_Test</span>
+                <span class="method-start">2062080 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">2134579 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DigitalWellbeingAndParantelControls.Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2135252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Dashboard_BedtimeMode_FocusMode_ManageNotification_DoNotDisturb_HeadsUP_ShowIconInTheAppList_Test</span>
+                <span class="method-start">2147643 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">2672356 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Google.Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2672839 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Ads_Autofill_Backup_DevicesAndSharing_FindMyDevice_MobileDataAndMessaging_ParentalControls_PersonalizeUsingSharedData_SetupAndRestore_FirebaseAppIndexing_Test</span>
+                <span class="method-start">2683220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">2880958 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DuraSpeed.DuraSpeedAndApps_ToggleButtonOnOff_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2881404 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DuraSpeedAndApps_ToggleButtonOnOff_Test</span>
+                <span class="method-start">2894569 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">2925153 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">System.LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">2925987 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LanguageAndInput_Gestures_DateAndTime_Backup_ResetOptions_MultipleUsers_SystemUpdate_Test</span>
+                <span class="method-start">2938722 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3195275 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">System2.DeveloperOptionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3195743 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DeveloperOptions_Test</span>
+                <span class="method-start">3208034 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3362167 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AboutTablet.DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3363313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DeviceName_EmergencyInformation_LegalInformation_ModelAndHardware_AndroidVersion_WiFiMacAddress_CustomBuildVersion_BuildNumber_SoftwareUpdates_Test</span>
+                <span class="method-start">3376259 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3490903 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Clock.SetAlarm</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3493007 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ClockTest</span>
+                <span class="method-start">3507036 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3524745 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">SoundRecorder.SoundRecordAndPlay</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3525989 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SoundRecorderTest</span>
+                <span class="method-start">3537914 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3605575 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Dialer.DialANumber</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3606989 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DialerTest</span>
+                <span class="method-start">3620001 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3664681 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Gallery.LaunchPictureFromGallery</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3666128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">GalleryTest</span>
+                <span class="method-start">3678204 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3690434 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Contacts.AddContacts</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3691351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ContactsTest</span>
+                <span class="method-start">3707519 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3719698 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Camera.CapturePictureVideo</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3720593 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CameraTest</span>
+                <span class="method-start">3732717 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3744932 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Calculator.CalculateNumbers</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3745849 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CalculatorTest</span>
+                <span class="method-start">3761968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">3782443 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

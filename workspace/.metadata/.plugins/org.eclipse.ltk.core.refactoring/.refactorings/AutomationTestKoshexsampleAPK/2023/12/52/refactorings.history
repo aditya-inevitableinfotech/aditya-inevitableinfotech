@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;I2&apos; to &apos;I2C&apos;&#x0A;- Original project: &apos;AutomationTestKoshexsampleAPK&apos;&#x0A;- Original element: &apos;AutomationTestKoshexsampleAPK/src/test/java/I2&apos;&#x0A;- Renamed element: &apos;AutomationTestKoshexsampleAPK/src/test/java/I2C&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings&#x0A;- Rename subpackages of the package" description="Rename package &apos;I2&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;I2" name="I2C" qualified="false" references="true" stamp="1703582730683" textual="false" version="1.0"/>
+</session>

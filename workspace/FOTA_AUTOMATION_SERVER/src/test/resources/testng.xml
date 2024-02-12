@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" verbose="5" parallel="classes" thread-count="10">
+     <listeners>
+        <listener class-name="hawKbitUpdateServer.hawKbitUpdateServerEnd" />
+        <listener class-name="hawKbitUpdateServer.TestNameListener" />
+    </listeners>
+    <test name="hawKbit Update Server End Test Cases">
+        <packages>
+            <package name="hawKbitUpdateServer" />
+        </packages>
+    </test>
+</suite>
